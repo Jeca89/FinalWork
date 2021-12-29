@@ -39,7 +39,7 @@ describe('login', () => {
 
     });
 
-    it.only('Add professor', () => {
+    it('Add professor', () => {
 
         cy.intercept({
             method: "POST",

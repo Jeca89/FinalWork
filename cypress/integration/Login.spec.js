@@ -13,7 +13,7 @@ describe('login', () => {
 
     });
 
-    it.only('Login with valid credentials', () => {
+    it('Login with valid credentials', () => {
 
         cy.intercept({
             method: 'POST',
