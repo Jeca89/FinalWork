@@ -56,7 +56,7 @@ describe('login', () => {
          gradebooksAdd.submitBtn.click();
 
          cy.wait('@create').then((interception) => {
-             expect(intercepton.response.statusCode).eq(201);
+             expect(interception.response.statusCode).eq(201);
              gradebookId = interception.response.body.id
          });
 

@@ -59,7 +59,7 @@ describe('login', () => {
         addProfessor.submitBtn.click()
 
         cy.wait('@create').then((interception) => {
-            expect(interception.response.statusCode).eq(200);
+            expect(interception.response.statusCode).eq(201);
             profId = interception.response.body.id;
         });
 
